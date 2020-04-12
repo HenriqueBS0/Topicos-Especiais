@@ -7,12 +7,15 @@
 </head>
 <body>
   <h1>IMC</h1>
-  <form >
+  <form autocomplete="off">
     <label for="altura">Altura</label>
     <input type="text" id="altura">
     <label for="peso">Peso</label>
     <input type="text" id="peso">
-    <span></span>
+    <button type="button" onclick="calculaIMC('altura', 'peso', 'campoResposta')"> calcular </button>
+    <label for="campoResposta">IMC: </label>
+    <span id="campoResposta"></span>
   </form>
+  <script src="js/utils.js"></script>
 </body>
 </html>

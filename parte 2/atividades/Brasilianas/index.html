@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Brasilianas</title>
 </head>
+
 <body>
-  <span id="login">Visitante</span>
-  <input type="text" id="nome" autocomplete="off">
-  <button type="button" onclick="logar()">Logar</button>
-
-  <div class="card" id="violao">
-    <div class="apresentacao">
-      <div class="imagem"></div>
-      <div class="dados">
-        <span class="Nome">Violão Folk Strinberg SD200C MGS Mahogany</span>
-        <span class="preco">R$ 750,00</span>
-      </div>
-      <div class="controle">
-        <button class="adicionar" onclick="adicionar('violao', 750)">+</button>
-        <div class="dadosVariaveis">
-          <span class="quantidade" quantidade="0">0</span>
-          <span class="precoTotal">R$ 0,00</span>
-        </div>
-        <button class="retirar" onclick="retirar('violao', 750)">-</button>
-      </div>
+  <div class="pagina">
+    <span id="login">Visitante</span>
+    <div class="logar">
+      <input type="text" id="nome" autocomplete="off">
+      <button type="button" onclick="logar()">Logar</button>
     </div>
-    <button type="button" class="buttonRemove" onclick="removerItem('violao')">Remover Item</button>  
+
+    <div class="card" id="violao">
+      <div class="apresentacao">
+        <div class="imagemProduto"></div>
+        <div class="dados">
+          <span class="nome">Violão Folk Strinberg SD200C MGS Mahogany</span>
+          <span class="preco">R$ 750,00</span>
+        </div>
+        <div class="dadosVariaveis">
+          <span class="precoTotal">R$ 0,00</span>
+          <div class="controle">
+            <button class="retirar" onclick="retirar('violao', 750)">-</button>
+            <span class="quantidade" quantidade="0">0</span>
+            <button class="adicionar" onclick="adicionar('violao', 750)">+</button>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="buttonRemove" onclick="removerItem('violao')">Remover Item</button>
+    </div>
+
+    <div class="card" id="sanfona">
+      <div class="apresentacao">
+        <div class="imagemProduto"></div>
+        <div class="dados">
+          <span class="nome">Acordeon Sanfona Gaita - 120 Baixos - Vermelho Perolado</span>
+          <span class="preco">R$ 4950,00</span>
+        </div>
+        <div class="dadosVariaveis">
+          <span class="precoTotal">R$ 0,00</span>
+          <div class="controle">
+            <button class="retirar" onclick="retirar('sanfona', 4950)">-</button>
+            <span class="quantidade" quantidade="0">0</span>
+            <button class="adicionar" onclick="adicionar('sanfona', 4950)">+</button>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="buttonRemove" onclick="removerItem('sanfona')">Remover Item</button>
+    </div>
+
+    <div class="finalizar">
+      <button type="button" onclick="finalizar()">Finalizar</button>
+    </div>
   </div>
-
-  <button type="button" onclick="finalizar()">Finalizar</button>
-
   <script src="js/utils.js"></script>
 </body>
+
 </html>

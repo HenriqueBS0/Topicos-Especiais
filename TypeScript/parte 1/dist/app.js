@@ -3,4 +3,4 @@ console.log(message);
 var episode = 4;
 console.log("This is episode " + episode);
 episode++;
-console.log("Next episode is " + episode);
+console.log("Next episode " + episode);

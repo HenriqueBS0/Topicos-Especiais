@@ -18,7 +18,7 @@ class Bicicleta {
     this.suspensao = suspensao;
   }
 
-  dadosBicicleta(){
+  dados(){
     console.log(
       `Marca: ${this.marca}\n`+
       `Modelo: ${this.modelo}\n`+
@@ -32,5 +32,5 @@ class Bicicleta {
 }
 
 const bicicleta1 = new Bicicleta('Mountain Bike', 'Caloi', 'MTB', 29, 16, 27, true)
-bicicleta1.dadosBicicleta();
+bicicleta1.dados();
 

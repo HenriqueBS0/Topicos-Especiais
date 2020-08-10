@@ -16,7 +16,7 @@ class Carro {
     this.preco = preco;
   }
 
-  dadosCarro(){
+  dados(){
     console.log(
       `Modelo: ${this.modelo}\n`+
       `Marca: ${this.marca}\n`+
@@ -29,4 +29,4 @@ class Carro {
 }
 
 const corsa = new Carro('Seda', 'Chevrolet', 2008, 4, 'Flex', 17000);
-corsa.dadosCarro();
+corsa.dados();

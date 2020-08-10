@@ -7,7 +7,7 @@ var Carro = /** @class */ (function () {
         this.tipo_combustivel = tipo_combustivel;
         this.preco = preco;
     }
-    Carro.prototype.dadosCarro = function () {
+    Carro.prototype.dados = function () {
         console.log("Modelo: " + this.modelo + "\n" +
             ("Marca: " + this.marca + "\n") +
             ("Ano: " + this.ano + "\n") +
@@ -18,4 +18,4 @@ var Carro = /** @class */ (function () {
     return Carro;
 }());
 var corsa = new Carro('Seda', 'Chevrolet', 2008, 4, 'Flex', 17000);
-corsa.dadosCarro();
+corsa.dados();

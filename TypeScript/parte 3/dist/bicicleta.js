@@ -8,7 +8,7 @@ var Bicicleta = /** @class */ (function () {
         this.marchas = marchas;
         this.suspensao = suspensao;
     }
-    Bicicleta.prototype.dadosBicicleta = function () {
+    Bicicleta.prototype.dados = function () {
         console.log("Marca: " + this.marca + "\n" +
             ("Modelo: " + this.modelo + "\n") +
             ("Tipo: " + this.tipo + "\n") +
@@ -20,4 +20,4 @@ var Bicicleta = /** @class */ (function () {
     return Bicicleta;
 }());
 var bicicleta1 = new Bicicleta('Mountain Bike', 'Caloi', 'MTB', 29, 16, 27, true);
-bicicleta1.dadosBicicleta();
+bicicleta1.dados();
